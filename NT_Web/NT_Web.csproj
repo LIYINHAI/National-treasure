@@ -74,6 +74,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AdminPinlun.aspx" />
     <Content Include="Admin\adminuser.aspx" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
@@ -1039,6 +1040,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminPinlun.aspx.cs">
+      <DependentUpon>AdminPinlun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPinlun.aspx.designer.cs">
+      <DependentUpon>AdminPinlun.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\adminuser.aspx.cs">
       <DependentUpon>adminuser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

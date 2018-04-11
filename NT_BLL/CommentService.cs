@@ -13,5 +13,13 @@ namespace NT_BLL
    public class CommentService
     {
         private static IComments icomments = DataAccess.CreateComments();
+        public static int DeleteComments(int ComID)
+        {
+            return icomments.DeleteComments(ComID);
+        }
+        public static DataTable SelectAllpinlun()
+        {
+            return icomments.SelectAllpinlun();
+        }
     }
 }
