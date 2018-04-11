@@ -11,6 +11,9 @@ namespace NT_IDAL
 {
    public interface IReplyLeavewords
     {
-
+        //展现
+        DataTable SelectAll();
+        //删除
+        int Delete(int ReplyLeavewords_ID);
     }
 }
