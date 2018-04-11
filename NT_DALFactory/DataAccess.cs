@@ -15,48 +15,48 @@ namespace NT_DALFactory
         private static string db = ConfigurationManager.AppSettings["DB"].ToString();
         public static IAcg CreateAcg()
         {
-            string className = AssemblyName + "." + db + "ACG";
+            string className = AssemblyName +"." +db +"ACG";
             return (IAcg)Assembly.Load(AssemblyName).CreateInstance(className);
         }
         public static IAdminInfo CreateAdminInfo()
         {
-            string className = AssemblyName + "." + db + "Admin";
+            string className = AssemblyName +"." +db +"Admin";
             return (IAdminInfo)Assembly.Load(AssemblyName).CreateInstance(className);
         }
         public static IComments CreateComments()
         {
-            string className = AssemblyName + "." + db + "Comments";
+            string className = AssemblyName +"." +db +"Comments";
             return (IComments)Assembly.Load(AssemblyName).CreateInstance(className);
         }
         public static ICulinfo CreateCulinfo()
         {
-            string className = AssemblyName + "." + db + "Cull";
+            string className = AssemblyName +"." +db +"Cull";
             return (ICulinfo)Assembly.Load(AssemblyName).CreateInstance(className);
         }
         public static ILeavewords CreateLeavewords()
         {
-            string className = AssemblyName + "." + db + "Leavewords";
+            string className = AssemblyName +"." +db +"Leavewords";
             return (ILeavewords)Assembly.Load(AssemblyName).CreateInstance(className);
         }
         public static INewsinfo CreateNewsinfo()
         {
-            string className = AssemblyName + "." + db + "News";
+            string className = AssemblyName + "." + db +"News";
             return (INewsinfo)Assembly.Load(AssemblyName).CreateInstance(className);
         }
         public static IReplyComments CreateReplyComments()
         {
-            string className = AssemblyName + "." + db + "ReplyComments";
+            string className = AssemblyName + "." + db +"ReplyComments";
             return (IReplyComments)Assembly.Load(AssemblyName).CreateInstance(className);
         }
         public static IReplyLeavewords CreateReplyLeavewords()
         {
-            string className = AssemblyName + "." + db + "ReplyLeavewords";
+            string className = AssemblyName + "." + db +"ReplyLeavewords";
             return (IReplyLeavewords)Assembly.Load(AssemblyName).CreateInstance(className);
         }
-        public static IUser CreateUser()
+        public static IUserInfo CreateUserInfo()
         {
-            string className = AssemblyName + "." + db + "User";
-            return (IUser)Assembly.Load(AssemblyName).CreateInstance(className);
+            string className = AssemblyName + "." + db +"UserInfo";
+            return (IUserInfo)Assembly.Load(AssemblyName).CreateInstance(className);
         }
     }
 }

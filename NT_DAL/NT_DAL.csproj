@@ -51,7 +51,7 @@
     <Compile Include="SqlServerNewsinfo.cs" />
     <Compile Include="SqlServerReplyComments.cs" />
     <Compile Include="SqlServerReplyLeavewords.cs" />
-    <Compile Include="SqlServerUser.cs" />
+    <Compile Include="SqlServerUserInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NT_IDAL\NT_IDAL.csproj">

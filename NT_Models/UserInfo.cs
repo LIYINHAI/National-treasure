@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace NT_Models
 {
-   public class User
+   public class UserInfo
     {
         public int User_ID { get; set; }
 
-        
+
         public string User_Name { get; set; }
 
         public string User_Password { get; set; }
