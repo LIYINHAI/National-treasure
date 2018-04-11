@@ -13,5 +13,13 @@ namespace NT_BLL
    public class NewsService
     {
         private static INewsinfo inewsinfo = DataAccess.CreateNewsinfo();
+        public static int DeleteAct(int News_ID)
+        {
+            return inewsinfo.DeleteAct(News_ID);
+        }
+        public static DataTable SelectTextAll()
+        {
+            return inewsinfo.SelectTextAll();
+        }
     }
 }

@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\adminnews.aspx" />
     <Content Include="Admin\adminuser.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -79,6 +80,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\adminnews.aspx.cs">
+      <DependentUpon>adminnews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\adminnews.aspx.designer.cs">
+      <DependentUpon>adminnews.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\adminuser.aspx.cs">
       <DependentUpon>adminuser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
