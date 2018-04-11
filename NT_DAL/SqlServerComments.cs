@@ -12,11 +12,13 @@ namespace NT_DAL
 {
     public class SqlServerComments : IComments
     {
+        //删除评论
         public int DeleteComments(int Comments_ID)
         {
             SqlParameter[] sp = { new SqlParameter("@Comments_ID",Comments_ID) };
             return DBHelper.GetExcuteNonQuery("DeleteComments", System.Data.CommandType.StoredProcedure, sp);
         }
+        //展现评论
 
         public DataTable SelectAllpinlun()
         {

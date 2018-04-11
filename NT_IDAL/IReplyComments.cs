@@ -11,6 +11,9 @@ namespace NT_IDAL
 {
    public interface IReplyComments
     {
-
+        //展现
+        DataTable SelectAll();
+        //删除
+        int Delete(int ReplyComments_ID);
     }
 }

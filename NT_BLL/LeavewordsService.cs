@@ -13,5 +13,13 @@ namespace NT_BLL
    public class LeavewordsService
     {
         private static ILeavewords ileavewords = DataAccess.CreateLeavewords();
+        public static int Deleteliuyan(int Leavewords_ID)
+        {
+            return ileavewords.Deleteliuyan(Leavewords_ID);
+        }
+        public static DataTable SelectAllliuyan()
+        {
+            return ileavewords.SelectAllliuyan();
+        }
     }
 }
