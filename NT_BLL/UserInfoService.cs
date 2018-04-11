@@ -24,5 +24,15 @@ namespace NT_BLL
         {
             return iuserinfo.SelectTextAll();
         }
+        //登陆
+        public static SqlDataReader Login(string Name, string paw)
+        {
+            return iuserinfo.Login(Name, paw);
+        }
+        //注册
+        public static int Insert(UserInfo userinfo)
+        {
+            return iuserinfo.Insert(userinfo);
+        }
     }
 }
